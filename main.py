@@ -2,10 +2,10 @@ import pymongo
 from flask import Flask, redirect, url_for, render_template, request
 from pymongo import MongoClient
 from datetime import datetime
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
 
-MONGO_URL = "mongodb+srv://lolNewUser:lzw16A5n6KpYMblR@nodepracticecluster.jmhpf.mongodb.net/flaskquotes?retryWrites=true&w=majority"
+MONGO_URL = os.getenv("MONGO_URL")
 
 cluster = MongoClient(MONGO_URL)
 cluster_db = cluster["flaskquotes"]
