@@ -5,7 +5,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 
-MONGO_URL = os.getenv("MONGO_URL")
+MONGO_URL = "mongodb+srv://lolNewUser:lzw16A5n6KpYMblR@nodepracticecluster.jmhpf.mongodb.net/flaskquotes?retryWrites=true&w=majority"
 
 cluster = MongoClient(MONGO_URL)
 cluster_db = cluster["flaskquotes"]
