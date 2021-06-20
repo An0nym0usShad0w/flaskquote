@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    {% if title %}
+     <title>Flask Blog - {{title}} </title>
+    {% else %}
+    <title>Flask Blog - nt</title>
+    {% endif %}
+</head>
+<body>
+    {% block enterQuote %}
+
+    {% endblock enterQuote%}
+
+    <!--<h3 style="color:white; font-family: sans-serif; width: 300px; text-align: center">This is the layout body</h3>-->
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

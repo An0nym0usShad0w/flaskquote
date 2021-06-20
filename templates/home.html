@@ -1,0 +1,25 @@
+<div style="text-align: right; justify-content: right; padding-top:20px">
+    <a href="/about" style="color:white; font-size:15px; padding:10px; background: darkblue;font-family: sans-serif; width: 300px; margin-bottom:20px">About Page</a>
+</div>
+
+
+        <div style="text-align: center; justify-content: center; padding-top:20px">
+            <a href="/enterquote" style="color:white; font-size:40px; padding:5px; background: red;font-family: sans-serif; width: 300px; font-family: sans-serif;">Enter your QUOTE!</a>
+        </div>
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div style="display:flex; flex-wrap:wrap; align-items: center;justify-content: center; margin-top:20px;">
+            {% for quote in quote_posts %}
+                <div class="onequote" style="margin-left:15px; margin-bottom:10px;">
+                    <h2 class="author"> {{ quote['author'] }} </h2>
+                    <p class="date">By {{ quote['time_posted']}} </p>
+                    <h3  class="quote"> {{ quote['quote'] }} </h3>
+                </div>
+                {% endfor %}
+        </div>
+
+
+{% endblock content%}

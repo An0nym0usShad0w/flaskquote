@@ -1,0 +1,29 @@
+<div style="text-align: right; justify-content: right; padding-top:20px">
+    <a href="/about" style="color:white; font-size:15px; padding:10px; background: darkblue;font-family: sans-serif; width: 300px; margin-bottom:20px">About Page</a>
+</div>
+
+<div style="text-align: left; justify-content: left;transform: translateY(-30px)">
+    <a href="/" style="color:white; font-size:15px; padding:10px; background: orange;font-family: sans-serif; width: 300px; margin-bottom:20px">Home Page</a>
+</div>
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action='#'  method='POST' >
+    <p>Name: </p>
+    <p>
+        <input type='text' name = 'author' required = "1"/>
+    </p>
+
+
+    <p>The quote: </p>
+    <p><input type = 'text' name = 'quote' required = "1"></p>
+
+    <p>
+        <input type='submit' value='submit'/>
+    </p>
+
+</form>
+
+{% endblock %}

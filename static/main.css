@@ -1,0 +1,38 @@
+body {
+  background: lightblue;
+  color: #333333;
+
+}
+
+.onequote{
+    background:lightgreen;
+    width: 300px;
+    margin-top:5px;
+    padding: 10px;
+    border-style: dotted;
+
+}
+.author {
+    background: yellow;
+    width: 300px;
+    font-size:15px;
+    border-style: dotted;
+    text-align:center;
+    margin-top:15px;
+}
+
+.quote {
+    font-style: italic;
+    font-family:sans-serif;
+    background: cyan;
+    width: 300px;
+    font-size:35px;
+    border-style: dotted;
+    text-align:center;
+    margin-top:15px;
+}
+
+.date{
+    width: 300px;
+    text-align:right;
+}
